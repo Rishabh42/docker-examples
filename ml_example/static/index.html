@@ -1,0 +1,36 @@
+<main>
+    <section id="text-gen">
+      <h2 class="relative group">
+      <a 
+          id="text-generation-using-flan-t5" 
+          class="header-link block pr-1.5 text-lg no-hover:hidden with-hover:absolute with-hover:p-1.5 with-hover:opacity-0 with-hover:group-hover:opacity-100 with-hover:right-full" 
+          href="#text-generation-using-flan-t5"
+      >
+          <span><IconCopyLink/></span>
+      </a>
+      <span>
+          Text generation using Flan T5
+      </span>
+  </h2>
+  
+      <p>
+        Model:
+        <a
+          href="https://huggingface.co/google/flan-t5-small"
+          rel="noreferrer"
+          target="_blank"
+          >google/flan-t5-small
+        </a>
+      </p>
+      <form class="text-gen-form">
+        <label for="text-gen-input">Text prompt</label>
+        <input
+          id="text-gen-input"
+          type="text"
+          value="German: There are many ducks"
+        />
+        <button id="text-gen-submit">Submit</button>
+        <p class="text-gen-output"></p>
+      </form>
+    </section>
+  </main>
